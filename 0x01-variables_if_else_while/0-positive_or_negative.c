@@ -13,20 +13,15 @@ int main(void)
 	scanf("%d", &n);
 	if (n > 0)
 	{
-		printf("n is a positive number.\n");
+		return (0);
 	}
 	else if (n < 0)
 	{
-		printf("n is a negative number.\n");
-	}
-	else if (n == 0)
-	{
-		printf("n is null.\n");
+		return (1);
 	}
 	else
 	{
-		printf("n is an invalid number.\n");
+		printf("n is zero.\n");
 	}
-	return (0);
 }
 
