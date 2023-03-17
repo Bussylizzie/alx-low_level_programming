@@ -9,22 +9,23 @@ int main(void)
 {
 	int n;
 
-	printf("input n: \n");
+	printf("input n:\n");
+	scanf("%d", &n);
 	if (n > 0)
 	{
-		printf("n is a positive number. \n");
+		printf("n is a positive number.\n");
 	}
 	else if (n < 0)
 	{
-		printf("n is a negative number. \n");
+		printf("n is a negative number.\n");
 	}
 	else if (n == 0)
 	{
-		printf("n is null. \n");
+		printf("n is null.\n");
 	}
 	else
 	{
-		printf("n is an invalid number. \n");
+		printf("n is an invalid number.\n");
 	}
 	return (0);
 }
