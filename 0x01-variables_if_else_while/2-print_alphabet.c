@@ -4,13 +4,14 @@
  * Return: Always 0 (Success)
  */
 #include <stdio.h>
-#include <ctype.h>
 int main(void)
 {
-	for (int x = 'A'; x <= 'Z'; x++)
+	char x;
+
+	for (x = 'a'; x <= 'z'; x++)
 	{
-		char lower = tolower(x);
-	putchar(lower);
+	putchar(x);
+	putchar('\n');
 	}
 	return (0);
 }
