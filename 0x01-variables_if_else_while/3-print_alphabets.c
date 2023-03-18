@@ -6,13 +6,12 @@
 #include <stdio.h>
 int main(void)
 {
-	char x, y;
+	char x;;
 
 	for (x = 'a'; x <= 'z'; ++x)
+	for (x = 'A'; x <= 'Z'; ++x)
 		putchar(x);
-	putchar('\n');
-	for (y = 'A'; y <= 'Z'; ++y)
-		putchar(y);
+		putchar('\n');
 	return (0);
 }
 
