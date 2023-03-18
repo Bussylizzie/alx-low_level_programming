@@ -6,13 +6,15 @@
 #include <stdio.h>
 int main(void)
 {
-	char x;
+	char x, e, q;
 
-	for (x = 'a' <= 'z'; x != 'q', 'e'; ++x)
+	e = 'e';
+	q = 'q';
+
+	for (x = 'a'; x <= 'z'; ++x)
+		if (x != e && x != q)
 	{
 		putchar(x);
-	}
-	{
 		putchar('\n');
 	}
 	return (0);
