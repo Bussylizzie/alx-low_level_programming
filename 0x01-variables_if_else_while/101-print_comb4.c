@@ -15,11 +15,9 @@ int main(void)
 		{
 			for (k = '2'; k <= '9'; ++k)
 			{
-				for (i != j; i < j; ++i)
+				for (i < j; i < k; ++i)
 				{
-				for (i != k; i < k; ++i)
-				{
-				for (j != k; j < k; ++j)
+				for (j > i; j < k; ++j)
 					{
 				putchar(i);
 			putchar(j);
@@ -32,7 +30,6 @@ int main(void)
 				}
 			}
 		}
-	}
 	}
 	{
 		putchar('\n');
