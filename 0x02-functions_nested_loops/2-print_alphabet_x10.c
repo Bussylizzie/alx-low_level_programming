@@ -1,4 +1,5 @@
 #include "main.h"
+#include<stdio.h>
 
 /**
  * print_alphabet_x10 - display alphabets ten times
@@ -20,5 +21,6 @@ for (a = 1; a <= 10; ++a)
 		}
 	}
 }
+printf("\n");
 }
 
