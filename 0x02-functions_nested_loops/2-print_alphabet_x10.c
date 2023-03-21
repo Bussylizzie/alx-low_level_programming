@@ -11,18 +11,16 @@ void print_alphabet_x10(void)
 char b;
 int a;
 
+for (a = 1; a <= 10; ++a)
 {
-	for (a = 1; a <= 10; ++a)
+putchar('\n');
 {
-	_putchar('\n');
-	{
-		for (b = 'a'; b <= 'z'; ++b)
-		{
-			_putchar(b);
-	}
+for (b = 'a'; b <= 'z'; ++b)
+{
+_putchar(b);
 }
 }
-}
+if (a == 10)
 printf("\n");
 }
-
+}
