@@ -13,14 +13,11 @@ int a;
 
 for (a = 1; a <= 10; ++a)
 {
-putchar('\n');
-{
 for (b = 'a'; b <= 'z'; ++b)
 {
 _putchar(b);
+_putchar('\n');
 }
 }
-if (a == 10)
-printf("\n");
 }
-}
+
