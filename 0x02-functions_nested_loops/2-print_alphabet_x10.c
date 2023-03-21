@@ -19,8 +19,8 @@ for (a = 1; a <= 10; ++a)
 		{
 			_putchar(b);
 		}
-	}
-	printf("\n");
+		printf("\n");
+}
 }
 }
 
