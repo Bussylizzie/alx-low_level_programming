@@ -1,0 +1,24 @@
+#include "main.h"
+
+/**
+ * print_alphabet_x10 - display alphabets ten times
+ *
+ * Return: Always 0.
+ */
+void print_alphabet_x10(void)
+{
+char b;
+int a;
+
+for (a = 1; a <= 11; ++a)
+{
+	_putchar('\n');
+	{
+		for (b = 'a'; b <= 'z'; ++b)
+		{
+			_putchar(b);
+		}
+	}
+}
+}
+
