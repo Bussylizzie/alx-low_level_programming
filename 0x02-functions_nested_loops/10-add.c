@@ -10,15 +10,7 @@
 int add(int a, int b)
 
 {
-	int int_add;
-
-	{
-	int_add = a + b;
-	{
-		_putchar(int_add);
-	}
-	return (int_add);
-}
+	return (a + b);
 }
 
 
