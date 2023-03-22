@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _abs - display the absolute number of an integer
@@ -7,6 +8,7 @@
  */
 int _abs(int a)
 {
+	a = abs(a);
 	while (a >= 0)
 	{
 		if (a < 0)
