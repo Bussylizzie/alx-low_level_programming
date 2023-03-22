@@ -15,8 +15,7 @@ int print_last_digit(int a)
 			a = a * (-1);
 	}
 		{
-		printf("%d%d\n", a, a);
+			_putchar(a);
+			return (a);
 		}
-return (a);
 }
-
