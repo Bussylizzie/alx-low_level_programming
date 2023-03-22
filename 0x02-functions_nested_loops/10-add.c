@@ -11,11 +11,14 @@ int add(int a, int b)
 
 {
 	int int_add;
-	int_add = a + b
+
+	{
+	int_add = a + b;
 	{
 		_putchar(int_add);
 	}
 	return (0);
+}
 }
 
 
