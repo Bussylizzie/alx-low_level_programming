@@ -17,7 +17,7 @@ int add(int a, int b)
 	{
 		_putchar(int_add);
 	}
-	return (0);
+	return (int_add);
 }
 }
 
