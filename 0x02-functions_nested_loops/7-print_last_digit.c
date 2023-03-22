@@ -17,6 +17,6 @@ int print_last_digit(int a)
 		{
 		printf("%d%d\n", a, a);
 		}
-return (0);
+return (a);
 }
 
