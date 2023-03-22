@@ -8,14 +8,12 @@
  */
 int _abs(int a)
 {
-	a = abs(a);
-	while (a >= 0)
+	if (a < 0)
 	{
-		if (a < 0)
-			a = a * -1;
+		int abs_value;
+	abs_value = a * -1;
+	return (abs_value);
 	}
-	_putchar(a);
-	return (0);
+	return (a);
 }
-
 
