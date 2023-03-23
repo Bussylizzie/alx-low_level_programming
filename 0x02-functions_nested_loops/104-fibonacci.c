@@ -21,8 +21,8 @@ int main(void)
 	}
 	fib_1a = fib_1 / 10000000000;
 	fib_2a = fib_2 / 10000000000;
-	fib_1b = fib_1 / 10000000000;
-	fib_2b = fib_2 / 10000000000;
+	fib_1b = fib_1 % 10000000000;
+	fib_2b = fib_2 % 10000000000;
 	for (count = 93; count < 98; ++count)
 	{
 		a = fib_1a + fib_2a;
