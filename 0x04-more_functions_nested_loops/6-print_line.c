@@ -7,18 +7,14 @@
  */
 void print_line(int n)
 {
-	int x;
-
-if (n <= 0)
-{
-_putchar('\n');
-}
-else
-{
-for (x = 0; x < n; ++n)
-{
-_putchar('_');
-}
-_putchar('\n');
-}
+	while(n > 0)
+	{
+		_putchar('_');
+		++n;
+	}
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	_putchar('\n');
 }
