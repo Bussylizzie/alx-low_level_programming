@@ -18,7 +18,7 @@ void print_rev(char *s)
 		++s;
 	}
 	--s;
-	for (l = count; l > 0; ++l)
+	for (l = count; l >= 0; ++l)
 	{
 		_putchar(*s);
 		--s;
