@@ -17,11 +17,13 @@ void print_rev(char *s)
 		++count;
 		++s;
 	}
-	for (l = count; l > 0; --l)
+	for (l = count; l >= 0; --l)
 	{
 		--count;
+		{
 		_putchar(s[l]);
 		--s;
+		}
 	}
 	_putchar('\n');
 }
