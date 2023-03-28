@@ -20,9 +20,8 @@ void print_rev(char *s)
 	for (l = count; l > 0; --l)
 	{
 		--count;
-		--s;
-		--l;
 		_putchar(s[l]);
+		--s;
 	}
 	_putchar('\n');
 }
