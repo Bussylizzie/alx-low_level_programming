@@ -20,6 +20,7 @@ void print_rev(char *s)
 	{
 		_putchar(*s);
 		--s;
+		count = count - 1;
 	}
 	{
 	_putchar('\n');
