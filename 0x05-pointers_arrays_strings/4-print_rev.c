@@ -12,14 +12,14 @@ void print_rev(char *s)
 	int l;
 	int count = 0;
 
-	while (*s != '\0')
+	while (s[l] != '\0')
 	{
 		++count;
-		++s;
+		++l;
 	}
-	for (l = count; l >= 0; --l)
+	for (l = count - 1; l >= 0; --l)
 	{
-		printf("%c", (s[l]), --s);
+		_putchar(s[l]);
 	}
 	printf("\n");
 }
