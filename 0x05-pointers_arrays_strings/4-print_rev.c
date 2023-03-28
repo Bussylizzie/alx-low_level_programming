@@ -15,9 +15,11 @@ void print_rev(char *s)
 	while (*s != '\0')
 	{
 		++count;
+		++s;
 	}
 	for (l = (count - 1); l >= 0; --l)
 	{
+		--s;
 		_putchar(s[l]);
 	}
 	printf("\n");
