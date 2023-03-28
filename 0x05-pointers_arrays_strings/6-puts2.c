@@ -10,21 +10,16 @@ void puts2(char *str)
 {
 	int o;
 	int k = 0;
-	int l = 0;
 	char *s = str;
 
 	while (*s != '\0')
 	{
+		++k;
 		++s;
-		++l;
 	}
-	k = l - 1;
-	for (o = 0; o <= k; ++o)
+	for (o = 0; o < k; o += 2)
 	{
-		if (o % 2 == 0)
-		{
-			_putchar(s[o]);
-		}
+		_putchar(str[o]);
 	}
 	_putchar('\n');
 }
