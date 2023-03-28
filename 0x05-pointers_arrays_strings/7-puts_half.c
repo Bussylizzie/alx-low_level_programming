@@ -16,6 +16,7 @@ void puts_half(char *str)
 	{
 		++l;
 	}
+	{
 	if ((l % 2) == 0)
 	{
 		n = (l / 2);
@@ -23,6 +24,7 @@ void puts_half(char *str)
 	else
 	{
 		n = ((l - 1) / 2);
+	}
 	}
 	for (k = n; k < l; ++k)
 	{
