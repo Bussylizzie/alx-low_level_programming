@@ -19,10 +19,10 @@ void print_rev(char *s)
 	}
 	for (l = count; l > 0; --l)
 	{
-		_putchar(s[l]);
+		--count;
 		--s;
 		--l;
-		--count;
+		_putchar(s[l]);
 	}
 	_putchar('\n');
 }
