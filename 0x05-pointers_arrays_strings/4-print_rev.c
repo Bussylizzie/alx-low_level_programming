@@ -11,6 +11,7 @@ void print_rev(char *s)
 {
 	int l;
 	int count = 0;
+	char rev = s[0];
 
 	while (*s != '\0')
 	{
@@ -20,12 +21,12 @@ void print_rev(char *s)
 	for (l = 0; l < count; --l)
 	{
 		--count;
-		--s;
-		{
-			_putchar(*s);
-		}
+		rev = s[l];
+		s[l] = s[count];
+		s[count] = rev;
 	}
-		{
-			_putchar('\n');
-		}
+	{
+		_putchar(rev);
+	}
+	_putchar('\n');
 }
