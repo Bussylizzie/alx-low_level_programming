@@ -33,8 +33,6 @@ char *rot13(char *n)
 
 	while (n[i])
 	{
-		for (i = 0; n[i] != '\0'; i++)
-	{
 		for (j = 0; j < 52; j++)
 		{
 			if (n[i] == k[j])
@@ -42,7 +40,6 @@ char *rot13(char *n)
 				n[i] = p[j];
 			}
 		}
-	}
 		i++;
 	}
 	return (n);
