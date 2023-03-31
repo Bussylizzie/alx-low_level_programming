@@ -14,7 +14,7 @@ char *string_toupper(char *j)
 
 	while (j[i] != '\0')
 	{
-		if (i == 'a' && i <= 'z')
+		if (i >= 'a' && i <= 'z')
 			j[i] -= 32;
 		i++;
 	}
