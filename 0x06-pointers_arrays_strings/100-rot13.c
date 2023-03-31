@@ -38,6 +38,7 @@ char *rot13(char *n)
 			if (n[i] == k[j])
 			{
 				n[i] = p[j];
+				break;
 			}
 		}
 		i++;
