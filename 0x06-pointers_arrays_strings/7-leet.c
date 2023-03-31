@@ -1,0 +1,32 @@
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * leet - encodes a string
+ * @n: string pointer
+ *
+ * Return: Always 0.
+ */
+char *leet(char *n)
+{
+	int i, j;
+
+	char k[] = "aAeEoOtTlL";
+	char p[] = "4433007711";
+
+	for (i = 0; n[i] != '\0'; i++)
+	{
+		for (j = 0; j < 10; j++)
+			k[j] = p[j];
+		{
+			if (n[i] == k[j])
+			{
+				n[i] = p[j];
+			}
+		}
+	}
+	return (n);
+}
+
+
