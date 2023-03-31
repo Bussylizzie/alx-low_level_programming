@@ -13,9 +13,8 @@ char *cap_string(char *j)
 
 	i = 0;
 	while (!(j[i] >= 'a' && j[i] <= 'z'))
-		i++;
 	{
-	if (j[i - 1] == ' ' ||
+		if (j[i - 1] == ' ' ||
 			j[i - 1] == '\t' ||
 			j[i - 1] == '\n' ||
 			j[i - 1] == ',' ||
