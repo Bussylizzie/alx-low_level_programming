@@ -24,7 +24,7 @@ char *_strchr(char *s, char c)
 			p = &s[k];
 			break;
 		}
-		else if (s[k] != c && c == '\0')
+		else
 		{
 			p = NULL;
 		}
