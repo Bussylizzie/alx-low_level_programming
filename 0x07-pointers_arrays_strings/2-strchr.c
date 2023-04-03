@@ -23,7 +23,7 @@ char *_strchr(char *s, char c)
 		{
 			p = &s[k];
 		}
-		else if (s[k] != c && s[k] == '\0')
+		else if (s[k] != c && c == '\0')
 		{
 			p = NULL;
 		}
