@@ -24,6 +24,11 @@ char *_strchr(char *s, char c)
 			p = &s[k];
 			break;
 		}
+		else if (c == '\0')
+		{
+			p = &s[k];
+			break;
+		}
 		else
 		{
 			p = NULL;
