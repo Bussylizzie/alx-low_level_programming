@@ -15,7 +15,7 @@ char *_strchr(char *s, char c)
 		     /** occurence of c in s string */
 	char *p; /** pointer */
 
-		for (k = 0; s[k] != '\0'; k++)
+		for (k = 0; s[k] >= '\0'; k++)
 			i++;
 	for (k = 0; k < i; k++)
 	{
@@ -23,11 +23,6 @@ char *_strchr(char *s, char c)
 		{
 			p = &s[k];
 			break;
-		}
-		else if (c == '\0')
-		{
-			p = NULL;
-			continue;
 		}
 		else
 		{
