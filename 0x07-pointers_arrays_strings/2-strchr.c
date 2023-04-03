@@ -10,10 +10,14 @@
  */
 char *_strchr(char *s, char c)
 {
-	int k;
-	char *p;
+	int i = 0; /** int for string length */
+	int k = 0; /** int to checked for first */
+		     /** occurence of c in s string */
+	char *p; /** pointer */
 
-	for (; s[k] != '\0'; k++)
+		for (; s[k] != '\0'; k++)
+			i++;
+	for (; k < i; k++)
 	{
 		if (s[k] == c)
 		{
