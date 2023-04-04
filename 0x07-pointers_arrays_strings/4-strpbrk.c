@@ -10,7 +10,7 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	char *n;
+	char *n = NULL;
 	int i;
 	int j;
 
@@ -21,12 +21,11 @@ char *_strpbrk(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				n = &s[i];
+				i++;
 				break;
 			}
 			else
-			{
-				n = NULL;
-			}
+				return (n);
 		}
 	}
 	return (n);
