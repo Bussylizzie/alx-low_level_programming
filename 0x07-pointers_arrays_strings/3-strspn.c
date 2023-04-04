@@ -14,7 +14,7 @@ unsigned int _strspn(char *s, char *accept)
 	int n = 0;
 	int j = 0;
 
-		for (j = 0; accept[j] >= '\0'; j++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
 			for (n = 0; s[n] != '\0'; n++)
 		{
@@ -22,7 +22,6 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (s[n] == accept[j])
 			{
-				n++;
 				i++;
 			}
 			else if (accept[j] != s[n])
