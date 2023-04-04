@@ -24,7 +24,7 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				i++;
 			}
-			else if (accept[j] != s[n])
+			else if (accept[j++] != s[n])
 			{
 				break;
 			}
