@@ -26,7 +26,10 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 			else if (accept[j] == '\0')
+			{
 				i = 0;
+				break;
+			}
 		}
 		}
 		}
