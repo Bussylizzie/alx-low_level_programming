@@ -22,6 +22,11 @@ char *_strstr(char *haystack, char *needle)
 			{
 				p = &haystack[i];
 			}
+			else if (needle[j] == haystack[i + j])
+			{
+				p = &haystack[i];
+				++i;
+			}
 			else if (needle[j] != haystack[i + j])
 				return (p);
 		}
