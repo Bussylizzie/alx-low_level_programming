@@ -23,6 +23,10 @@ char *_strstr(char *haystack, char *needle)
 				p = &haystack[i];
 				i++;
 			}
+			else if ((haystack[i] == needle[j]) && needle[j] == '\0')
+			{
+				p = &haystack[i];
+			}
 			else
 				return (p);
 		}
