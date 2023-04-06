@@ -10,7 +10,10 @@ void _print_rev_recursion(char *s)
 {
 	int n;
 
-	for (; s[n] != '\0'; --n)
+	for (n = 0; s[n] != '\0'; n++)
+	{
+		s--;
+	}
 		puts(s);
 }
 
