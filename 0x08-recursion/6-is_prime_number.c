@@ -8,20 +8,12 @@
  */
 int is_prime_number(int n)
 {
-	if ((n / 2 > 1) && (n / 3 > 1) && (n / 5 > 1))
+	if ((n % 2 == 1) || (n % 3 == 1) || (n % 5 == 1))
 	{
-		return (0);
-	}
-	else if ((n / 2 < 1) && (n / 3 < 1) && (n / 5 < 1))
-	{
-		return (0);
-	}
-	else if ((n % 2 >= 1) || (n % 3 >= 1) || (n % 5 >= 1))
-	{
-		return (0);
+		return (1);
 	}
 	else
 	{
-		return (1);
+		return (0);
 	}
 }
