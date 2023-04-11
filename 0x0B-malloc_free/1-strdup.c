@@ -14,15 +14,14 @@ char *_strdup(char *str)
 
 
 	{
-		if (str == NULL)
-		{
-			return (NULL);
-		}
-	{
 		for (a = 0; a < b; a++)
 	{
 		b++;
 	}
+		if (str == NULL)
+		{
+			return (NULL);
+		}
 	str_duplicate = malloc(b++ * sizeof(char));
 	if (str_duplicate == NULL)
 	{
@@ -31,7 +30,7 @@ char *_strdup(char *str)
 	str[a] = str_duplicate[a];
 	str_duplicate[b] = '\0';
 	}
-}
+
 	return (str_duplicate);
 }
 
