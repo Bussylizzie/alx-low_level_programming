@@ -14,7 +14,7 @@ char *_strdup(char *str)
 
 
 	{
-		for (a = 0; a < b; a++)
+		for (a = 0; str[a]; a++)
 	{
 		b++;
 	}
